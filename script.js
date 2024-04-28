@@ -41,7 +41,7 @@ function playGame(){
     let computerPoints = 0;
     let result;
 
-    for (let round = 1; round <= 5; round++) {
+    for (let round = 1; round <= 5; round++) {      
         playerSelection = prompt("What is your option? Rock, Paper or Scissors?")
         computerSelection = getComputerChoice();
         result = playRound(playerSelection, computerSelection);
@@ -61,9 +61,29 @@ function playGame(){
 
 }
 
-let gameResult = playGame();
-if (gameResult[0] > gameResult[1]){
-    console.log(`You won the Best of 5! # Winnings: ${gameResult[0]} rounds`);
-} else {
-    console.log(`You lose the Best of 5! # Winnings: ${gameResult[0]} rounds`);
+function displayResult(result, playerSelection, computerSelection) {
+    const matchResult = document.querySelector("#result");
+    if (result > 0) {
+        matchResult.textContent = `You win! ${playerSelection} beats ${computerSelection}`;
+    } else if (result < 0) {
+        matchResult.textContent = `You lose! ${computerSelection} beats ${playerSelection}`;
+    } else {
+        matchResult.textContent = `It's a tie!`;
+    }
 }
+
+function handlePlayerChoice(choice) {
+    const computerChoice = getComputerChoice();
+    const result = playRound(choice, computerChoice);
+    displayResult(result, choice, computerChoice);
+}
+
+const buttonRock = document.querySelector("#bttnRock");
+const buttonPaper = document.querySelector("#bttnPaper");
+const buttonScissors = document.querySelector("#bttnScissors");
+
+buttonRock.addEventListener("click", () => handlePlayerChoice("rock"));
+buttonPaper.addEventListener("click", () => handlePlayerChoice("paper"));
+buttonScissors.addEventListener("click", () => handlePlayerChoice("scissors"));
+
+
