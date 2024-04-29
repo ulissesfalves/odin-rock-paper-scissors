@@ -4,19 +4,21 @@ This repository contains a simple implementation of the classic game "Rock, Pape
 
 # How to Play
 
-To play the game, simply run the playGame() function. The game consists of five rounds where you compete against the computer. Each round, you will be prompted to enter your choice: rock, paper, or scissors. The computer will randomly select its choice. The winner of each round is determined based on the classic rules: rock beats scissors, scissors beats paper, and paper beats rock. If both the player and the computer make the same choice, it's a tie.
-
-After five rounds, the game will announce the winner based on the number of rounds won by each player. If you win more rounds than the computer, you win the best of five series.
+1. Open the game in your web browser.
+2. Click on the image representing your choice: Rock, Paper, or Scissors.
+3. The computer will randomly select its choice.
+4. The result of the round will be displayed below the game interface.
+5. After five rounds, the final score will be shown, indicating whether the player won, lost, or tied the match.
 
 # Code Overview
 
-* getComputerChoice(): This function generates a random choice for the computer: rock, paper, or scissors.
-* playRound(playerSelection, computerSelection): This function simulates a single round of the game. It compares the player's selection with the computer's selection and determines the winner.
-* playGame(): This function orchestrates the game flow. It loops through five rounds, prompts the player for input, calls playRound() to determine the winner, and keeps track of points.
-* gameResult: The main script executes the game and announces the winner of the best of five series.
+* Best-of-five Match: The game follows the best-of-five format, ensuring a decisive outcome.
+* Dynamic Results: Each round's result is dynamically displayed on the screen.
+* Restart Option: After completing a match, the player can restart the game to play again.
+* User-Friendly Interface: The game has a clean and intuitive interface, making it easy to understand and play.
 
-# Running the Game
+# Live Demo
 
-To run the game, simply include this JavaScript code in your environment and execute it. Make sure you have a JavaScript runtime environment available, such as a web browser console or Node.js.
+[Play the Game](https://ulissesfalves.github.io/odin-rock-paper-scissors/).
 
 Feel free to customize or extend the game as you see fit! Happy gaming! 🎮
