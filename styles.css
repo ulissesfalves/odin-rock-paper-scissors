@@ -1,0 +1,66 @@
+* {
+    font-family: "Mouse Memoirs", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+  }
+
+  body {
+    margin: 0; /* Remove default body margins */
+    padding: 0; /* Remove default body padding */
+    /* background-image: url('img/wall_paper_2.jpeg');; /* Set the background image */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-attachment: fixed; /* Keep the background fixed */
+    background-color: #e3e0f5;/* Set the background color with transparency */
+  }
+
+  p {
+    font-size: 24px;
+  }
+
+ul {
+    font-size: 22px;
+    list-style-type: none;
+  }
+
+  img:hover {
+    cursor: pointer;
+}
+
+  /* Style for the container of the weapons */
+.weapon-container {
+    display: flex; /* Use flexbox to keep items in the same row */
+    justify-content: center; /* Distribute items evenly along the main axis */
+    align-items: center; /* Center items vertically */
+}
+
+/* Style for each weapon figure */
+figure {
+    text-align: center; /* Center the content */
+    margin: 0 15px; /* Remove default margins */
+}
+
+/* Style for the images */
+figure img {
+    width: 100px; /* Set the width of the images */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure images don't have extra space below them */
+    margin-bottom: 5px; /* Add some space between the image and the caption */
+}
+
+/* Style for the captions */
+figcaption {
+    font-size: 20px; /* Adjust font size */
+}
+
+button {
+    padding: 10px 20px;
+    width: 40%;
+    font-size: 20px;
+    background-color: #491f06;
+    border-radius: 8px;
+    border: 2px solid #F9FAF8;
+    color: #F9FAF8;
+}

@@ -3,19 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <title>Rock, Paper, Scissors!</title>
 </head>
 <body>
-    <h1>Game: Rock, Paper, Scissors</h1>
-    <p>Choose your weapon!</p>
-    <div>
-        <button id="bttnRock">Rock</button>
-        <button id="bttnPaper">Paper</button>
-        <button id="bttnScissors">Scissors</button>
+    <h1>Best of #5: Rock, Paper, Scissors</h1>
+    <p id="chooseCalling">Round #1 - Choose your weapon!!</p>
+    <div class="weapon-container">
+        <figure>
+            <img id="imgRock" src="img/rock.png" alt="Rock">
+            <figcaption>Rock</figcaption>
+        </figure>
+
+        <figure>
+            <img id="imgPaper" src="img/paper_2.png" alt="Paper">
+            <figcaption>Paper</figcaption>
+        </figure>
+        
+        <figure>
+            <img id="imgScissors" src="img/scissors_2.png" alt="Scissors">
+            <figcaption>Scissors</figcaption>
+        </figure>
+
     </div>
-    <p id="result"></p>
-    <p id="score"></p>
+
+    <p id="match"></p>
+
+    <p id="matchResult"></p>
+
+    <ul>
+        
+    </ul>
+
+    <p id="finalScore"></p>
+
+    <p id="restartGame"></p>
+
 </body>
 </html>
